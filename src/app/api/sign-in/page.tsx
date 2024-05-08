@@ -16,7 +16,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 ///const response = await fetch('/api/signin/', {
 
 
-export default function SiginPage(req: NextRequest) {
+export default function SiginPage() {
 
     const [showPassword, setShowPassword] = useState(false);
 

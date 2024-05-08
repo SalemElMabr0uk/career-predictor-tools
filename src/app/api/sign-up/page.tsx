@@ -5,7 +5,9 @@ import React, { useState } from "react";
 
 import axios from "axios";
 import { useRouter } from 'next/navigation';
-export default function SignupPage() {
+import { NextRequest } from "next/server";
+export default function SignupPage(req: NextRequest) {
+    
     const router = useRouter(); // Initialize useRouter hook
 
     const [showPassword, setShowPassword] = useState(false);
